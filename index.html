@@ -366,7 +366,7 @@ body.single-product .rd-logo{height:84px!important;margin-right:-16px!important}
 .rd-top-in{max-width:1400px;margin:0 auto;height:54px;padding:0 20px;display:flex;align-items:center;gap:20px}
 .rd-top-logo-wrap{flex:none;align-self:stretch;display:flex;align-items:center;background:#fff;padding:0 16px;margin-left:-20px;border-radius:0 999px 999px 0;box-shadow:2px 0 10px rgba(10,60,62,.22)}
 .rd-top-logo{height:42px!important;width:auto!important;display:block}
-.rd-top-name{flex:none;font-size:17px;letter-spacing:.16em;white-space:nowrap}.rd-top-name b{font-weight:800}
+.rd-top-head{display:flex;align-items:center}.rd-top-name{flex:none;font-size:17px;letter-spacing:.16em;white-space:nowrap}.rd-top-name b{font-weight:800}
 .rd-top-msg{margin-left:-8px;font-size:15px;letter-spacing:.12em;white-space:nowrap}.rd-top-msg .lt{font-weight:300}.rd-top-msg b{font-weight:800}
 .rd-top-msg .sep{display:inline-block;width:1px;height:14px;background:rgba(255,255,255,.45);margin:0 12px;vertical-align:-2px}
 .rd-cd{margin-left:auto;display:flex;align-items:center;gap:6px}
@@ -377,10 +377,20 @@ body.single-product .rd-logo{height:84px!important;margin-right:-16px!important}
 .rd-top-btn{flex:none;background:#fff;color:#1B7B7E!important;font-weight:800;font-size:13px;letter-spacing:.14em;padding:9px 18px;border-radius:999px;text-decoration:none!important}
 .rd-top-btn:hover{background:#e8f4f4}
 .rd-note{position:fixed!important;left:12px;bottom:12px;top:auto!important;z-index:100001;border-radius:999px;padding:6px 14px!important;font-size:12px!important;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-@media(max-width:1100px){.rd-top-msg{display:none}}
-@media(max-width:690px){.rd-top-in{height:48px;padding:0 12px;gap:8px}.rd-top-name{font-size:13px;letter-spacing:.1em}.rd-top-logo{height:34px!important}.rd-top-logo-wrap{margin-left:-10px;padding:0 12px}.rd-cd-l{display:none}
- .rd-cd{gap:4px}.rd-cd .u{min-width:34px;height:34px}.rd-cd .u b{font-size:15px}.rd-cd .u i{font-size:7px}.rd-top-btn{display:none}}
-</style></head><body class="archive tax-product_cat term-rh-large-appliances term-1527 wp-custom-logo wp-embed-responsive wp-theme-blocksy theme-blocksy woocommerce woocommerce-page woocommerce-no-js elementor-default elementor-kit-7 woocommerce-archive ct-elementor-default-template" data-link="type-2" data-prefix="woo_categories" data-header="type-1" data-footer="type-1"><div class="rd-top" id="rd-top" data-end="2026-10-25T23:59:59+02:00"><div class="rd-top-in"><span class="rd-top-name"><b>5 RED DAYS</b></span><span class="rd-top-msg"><span class="sep"></span><span class="lt">UP TO</span> <b>50% OFF</b> <span class="sep"></span> <span class="lt">FROM</span> <b>TUESDAY</b> <span class="lt">TILL</span> <b>SUNDAY</b></span><span class="rd-cd" aria-live="polite"><span class="rd-cd-l">ENDS IN</span><span class="u"><b id="cd-d">0</b><i>DAYS</i></span><span class="u"><b id="cd-h">00</b><i>HRS</i></span><span class="u"><b id="cd-m">00</b><i>MIN</i></span><span class="u"><b id="cd-s">00</b><i>SEC</i></span></span><a class="rd-top-btn" href="index.html">SHOP NOW</a></div></div><div class="rd-note"><span>PREVIEW - live site unchanged</span><a href="product.html">Product page</a></div><div class="rh-cod-bar" style="background:#2A7D7C;color:#fff;text-align:center;padding:.45em 1em;font-size:.9em;line-height:1.2;"> 💵 Cash on Delivery across Lebanon &nbsp;·&nbsp; 🎁 Free delivery on orders over $1,000</div><a class="skip-link screen-reader-text" href="#main">Skip to content</a><div class="ct-drawer-canvas" data-location="start"><div id="search-modal" class="ct-panel" data-behaviour="modal" role="dialog" aria-label="Search modal" inert><div class="ct-panel-actions"> <button class="ct-toggle-close" data-type="type-1" aria-label="Close search modal"> <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"/></svg> </button></div><div class="ct-panel-content"><form role="search" method="get" class="ct-search-form" data-form-controls="inside" data-taxonomy-filter="false" data-submit-button="icon" action="https://rachidihome.com/" data-live-results="thumbs"><div class="ct-search-form-inner ct-pseudo-input" > <input
+@media(max-width:1100px){
+ .rd-top-in{height:auto;flex-wrap:wrap;justify-content:center;row-gap:7px;column-gap:10px;padding:8px 12px}
+ .rd-top-head{flex:1 0 100%;display:flex;justify-content:center;align-items:center;white-space:nowrap}
+ .rd-cd{margin-left:0}
+}
+@media(max-width:690px){
+ .rd-top-in{padding:7px 8px;row-gap:6px;column-gap:8px}
+ .rd-top-name{font-size:11px;letter-spacing:.08em}
+ .rd-top-msg{font-size:10px;letter-spacing:.05em;margin-left:0}.rd-top-msg .sep{height:10px;margin:0 6px}
+ .rd-cd{gap:4px}.rd-cd-l{font-size:9px;letter-spacing:.12em;margin-right:2px}
+ .rd-cd .u{min-width:36px;height:32px;border-radius:7px}.rd-cd .u b{font-size:15px}.rd-cd .u i{font-size:7px}
+ .rd-top-btn{font-size:10.5px;letter-spacing:.1em;padding:8px 12px}
+}
+</style></head><body class="archive tax-product_cat term-rh-large-appliances term-1527 wp-custom-logo wp-embed-responsive wp-theme-blocksy theme-blocksy woocommerce woocommerce-page woocommerce-no-js elementor-default elementor-kit-7 woocommerce-archive ct-elementor-default-template" data-link="type-2" data-prefix="woo_categories" data-header="type-1" data-footer="type-1"><div class="rd-top" id="rd-top" data-end="2026-10-25T23:59:59+02:00"><div class="rd-top-in"><span class="rd-top-head"><span class="rd-top-name"><b>5 RED DAYS</b></span><span class="rd-top-msg"><span class="sep"></span><span class="lt">UP TO</span> <b>50% OFF</b> <span class="sep"></span> <span class="lt">FROM</span> <b>TUESDAY</b> <span class="lt">TILL</span> <b>SUNDAY</b></span></span><span class="rd-cd" aria-live="polite"><span class="rd-cd-l">ENDS IN</span><span class="u"><b id="cd-d">0</b><i>DAYS</i></span><span class="u"><b id="cd-h">00</b><i>HRS</i></span><span class="u"><b id="cd-m">00</b><i>MIN</i></span><span class="u"><b id="cd-s">00</b><i>SEC</i></span></span><a class="rd-top-btn" href="index.html">SHOP NOW</a></div></div><div class="rd-note"><span>PREVIEW - live site unchanged</span><a href="product.html">Product page</a></div><div class="rh-cod-bar" style="background:#2A7D7C;color:#fff;text-align:center;padding:.45em 1em;font-size:.9em;line-height:1.2;"> 💵 Cash on Delivery across Lebanon &nbsp;·&nbsp; 🎁 Free delivery on orders over $1,000</div><a class="skip-link screen-reader-text" href="#main">Skip to content</a><div class="ct-drawer-canvas" data-location="start"><div id="search-modal" class="ct-panel" data-behaviour="modal" role="dialog" aria-label="Search modal" inert><div class="ct-panel-actions"> <button class="ct-toggle-close" data-type="type-1" aria-label="Close search modal"> <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"/></svg> </button></div><div class="ct-panel-content"><form role="search" method="get" class="ct-search-form" data-form-controls="inside" data-taxonomy-filter="false" data-submit-button="icon" action="https://rachidihome.com/" data-live-results="thumbs"><div class="ct-search-form-inner ct-pseudo-input" > <input
  type="search" class="modal-field"				placeholder="Start typing to search"
  value=""
  name="s"
@@ -389,8 +399,8 @@ body.single-product .rd-logo{height:84px!important;margin-right:-16px!important}
  aria-label="Search for..."
  role="combobox"
  aria-autocomplete="list"
- aria-controls="ct-search-results-04f"
- aria-describedby="ct-search-status-04f"
+ aria-controls="ct-search-results-ab2"
+ aria-describedby="ct-search-status-ab2"
  aria-expanded="false"
  > <button type="submit" class="wp-element-button" aria-label="Search button"> <svg class="ct-icon ct-search-button-content" aria-hidden="true" width="15" height="15" viewBox="0 0 15 15"><path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"/></svg> <span class="ct-ajax-loader"> <svg viewBox="0 0 24 24"> <circle cx="12" cy="12" r="10" opacity="0.2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/> <path d="m12,2c5.52,0,10,4.48,10,10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"> <animateTransform
  attributeName="transform"
@@ -403,7 +413,7 @@ body.single-product .rd-logo{height:84px!important;margin-right:-16px!important}
  begin="indefinite"
  /> </path> </svg> </span> </button> <input type="hidden" name="ct_post_type" value="post:page:product"></div><div
  class="screen-reader-text"
- id="ct-search-status-04f"
+ id="ct-search-status-ab2"
  aria-live="polite"
  role="status"> No results</div></form></div></div><div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side" role="dialog" aria-label="Offcanvas modal" inert=""><div class="ct-panel-inner"><div class="ct-panel-actions"> <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer"> <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"/></svg> </button></div><div class="ct-panel-content" data-device="desktop"><div class="ct-panel-content-inner"></div></div><div class="ct-panel-content" data-device="mobile"><div class="ct-panel-content-inner"><nav
  class="mobile-menu menu-container has-submenu"
@@ -448,4 +458,4 @@ function p(n){return(n<10?'0':'')+n}function t(){var s=Math.max(0,Math.floor((en
 document.getElementById('cd-d').textContent=Math.floor(s/86400);document.getElementById('cd-h').textContent=p(Math.floor(s%86400/3600));
 document.getElementById('cd-m').textContent=p(Math.floor(s%3600/60));document.getElementById('cd-s').textContent=p(s%60);
 if(!s)bar.style.display='none'}t();setInterval(t,1000)})();</script></body></html>
-<!-- plugin=object-cache-pro client=phpredis metric#hits=17944 metric#misses=83 metric#hit-ratio=99.5 metric#bytes=4531565 metric#prefetches=848 metric#store-reads=66 metric#store-writes=15 metric#store-hits=872 metric#store-misses=66 metric#sql-queries=31 metric#ms-total=3211.65 metric#ms-cache=141.99 metric#ms-cache-avg=1.7748 metric#ms-cache-ratio=4.4 sample#redis-hits=184392427 sample#redis-misses=32178645 sample#redis-hit-ratio=85.1 sample#redis-ops-per-sec=129 sample#redis-evicted-keys=641330 sample#redis-used-memory=205463568 sample#redis-used-memory-rss=128528384 sample#redis-memory-fragmentation-ratio=0.6 sample#redis-connected-clients=3 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=383218 -->
+<!-- plugin=object-cache-pro client=phpredis metric#hits=17946 metric#misses=83 metric#hit-ratio=99.5 metric#bytes=4077292 metric#prefetches=848 metric#store-reads=67 metric#store-writes=14 metric#store-hits=873 metric#store-misses=66 metric#sql-queries=31 metric#ms-total=9137.60 metric#ms-cache=552.77 metric#ms-cache-avg=6.9096 metric#ms-cache-ratio=6.1 -->
